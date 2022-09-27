@@ -3,22 +3,47 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    background-color: black;
-}
-
-div {
     background-color: #4361ee;
-    color: #fff;
-    display: inline-flex;
-    font-size: 5em;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    height: 200px;
-    width: 500px;
     animation-name: bgSwirl;
     animation-duration: 60s;
     animation-iteration-count: infinite;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.countdown {
+    color: #fff;
+    font-size: 5em;
+    align-self: center;
+    margin: 0;
+    padding: .5em;
+}
+
+.buttonMenu {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+button {
+    background: #f83990;
+    color: #fafbfd;
+    font: 2em 'Oswald', sans-serif;
+    margin: 0 auto;
+    padding: .5em 1em;
+    outline: none;
+    border: 1px solid transparent;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    border-radius: 5px;
+}
+  
+button:hover {
+    background-color: #fff;
+    color: #4361ee;
+    border-color: #2cdcf9;
 }
 
 @keyframes bgSwirl{
